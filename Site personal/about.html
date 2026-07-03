@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="logo"><img src="logo.jpg" alt="Logo" width="120" height="120"></div>
+    </header>
+
+    <main>
+        <section>
+            <h2>About</h2>
+            <div class="project-card">
+                <h4 style="color: #fff; margin-top: 0;">Hi, I'm Ionuț.</h4>
+                <p>I am a Software Development Engineer with a Bachelor’s degree in Systems Engineering from University POLITEHNICA of Bucharest.</p>
+                <p>I specialize in building robust backend systems, with experience in developing scalable solutions for real estate and financial sectors.</p>
+                <p>My portfolio includes diverse projects, ranging from SQL to Machine Learning.</p>
+                <p>Beyond engineering, I have a strong passion for mathematics and education, having spent time as an instructor at Mathnasium to help students simplify and master complex concepts.</p>
+            </div>
+        </section>
+        <div style="margin-top: 30px; text-align: center;">
+    <a href="Resume.pdf" download class="cv-button">
+        See Full Resume
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <p id="copyRight"></p>
+        <p id="currentDate"></p>
+        <script>
+            var currentDate = new Date();
+            document.getElementById("currentDate").innerHTML = currentDate.getDate() + "." + (currentDate.getMonth() + 1) + "." + currentDate.getFullYear();
+            document.getElementById("copyRight").innerHTML = "&copy; " + currentDate.getFullYear() + " Călin George Ionuț";
+        </script>
+    </footer>
+</body>
+</html>

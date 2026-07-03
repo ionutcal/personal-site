@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="logo"><img src="logo.jpg" alt="Logo" width="120" height="120"></div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <div class="project-card">
+                <p>If you'd like to get in touch with me, you can reach me here:</p>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><strong>Email:</strong> <a href="mailto:ionutcal@yahoo.com" style="color:#fff;">ionutcal@yahoo.com</a></li>
+                    <li style="margin-bottom: 10px; "><strong>Phone: </strong><a href="tel:+40763113053" style="color:#fff;">+40 (763) 113 053</a></li>
+                    <li><strong>Address:</strong> Bucharest, Romania</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Send a Message</h2>
+            <div class="project-card">
+                <form action="https://formspree.io/f/ionutcal@yahoo.com" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="copyRight"></p>
+        <p id="currentDate"></p>
+        <script>
+            var currentDate = new Date();
+            document.getElementById("currentDate").innerHTML = currentDate.getDate() + "." + (currentDate.getMonth() + 1) + "." + currentDate.getFullYear();
+            document.getElementById("copyRight").innerHTML = "&copy; " + currentDate.getFullYear() + " Călin George Ionuț";
+        </script>
+    </footer>
+</body>
+</html>
