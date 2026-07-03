@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="logo"><img src="logo.jpg" alt="Logo" width="120" height="120"></div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                 <div class="project-card">
+                    <h3><a href="https://github.com/ionutcal/adaptive-math-tutor-ro" style="color:#fff;">Adaptive Math Tutoring Platform with Multimodal AI Evaluation</a></h3>
+                    <p style="font-size: 0.9rem; color: #999;">Python, Flask, SQLAlchemy, PostgreSQL, Chroma, LangChain, Google Gemini API, JavaScript, KaTeX</p>
+                    <p>Developed a web-based tutoring platform for Romanian gymnasium students (grades 4-8), combining multimodal answer evaluation (text, photo, digital whiteboard) with an adaptive difficulty algorithm formulated as a closed-loop control system.</p>
+                    <p>Integrated Retrieval-Augmented Generation (RAG) with Chroma vector database and LangChain, indexing digitized Romanian textbooks to ground AI feedback in the official MEC curriculum.</p>
+                    <p>Built a dedicated teacher module with automated gap detection that flags students showing three or more consecutive errors on the same topic, transforming passive activity history into actionable alerts.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3><a href="https://github.com/ionutcal/EvidentaApelurilorLa112" style="color:#fff;">Emergency Call and Intervention Management System</a></h3>
+                    <p style="font-size: 0.9rem; color: #999;">PHP, HTML, CSS, JavaScript, MySQL</p>
+                    <p>Developed a centralized platform for real-time management of emergency calls and rescue operators.</p>
+                    <p>Designed and implemented a relational database with interlinked tables (Dispatchers, Callers, Calls, etc.).</p>
+                    <p>Created a web-based interface for dispatchers to perform full CRUD operations.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3><a href="https://github.com/ionutcal/FashionImageClassification" style="color:#fff;">Fashion MNIST Image Classification</a></h3>
+                    <p style="font-size: 0.9rem; color: #999;">Python, NumPy, Pandas, Scikit-learn</p>
+                    <p>Developed a machine learning model to classify fashion items from Fashion MNIST dataset.</p>
+                    <p>Implemented a comprehensive data preprocessing pipeline, including feature scaling and dimensionality reduction.</p>
+                    <p>Trained and optimized a Random Forest Classifier for hyperparameter tuning.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="copyRight"></p>
+        <p id="currentDate"></p>
+        <script>
+            var currentDate = new Date();
+            document.getElementById("currentDate").innerHTML = currentDate.getDate() + "." + (currentDate.getMonth() + 1) + "." + currentDate.getFullYear();
+            document.getElementById("copyRight").innerHTML = "&copy; " + currentDate.getFullYear() + " Călin George Ionuț";
+        </script>
+    </footer>
+</body>
+</html>
